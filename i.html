@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" type="text/css" href="cs/CSS/style.css">-->
+    <title>Tele market</title>
+    <style>
+        * {
+	margin: 0;
+}
+
+.header {
+	position: fixed;
+	background: #302f2f;
+	color: white;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 10%;
+	z-index: 2;
+}
+
+.logo {
+	position: static;
+	color: white;
+	background: #302f2f;
+	top: 0px;
+	left: 0px;
+	width: 10%;
+	height: 100%;
+	text-align: center;
+}
+
+span:hover {
+	color: gray;
+}
+
+span {
+	display: inline-block;
+	padding-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer
+}
+.button_1, .button_2, .button_3, .button_4, .button_5 {
+	position: absolute;
+	color: white;
+	background: #302f2f;
+	top: 0px;
+	height: 100%;
+	text-align: center;
+	width: 10%;
+}
+.button_1 {
+	left: 10%;
+}
+.button_2 {
+	left: 20%;
+}
+.button_3 {
+	left: 30%;
+}
+.button_4 {
+	left: 60%;
+}
+.button_5 {
+	left: 70%;
+}
+
+.block_2 {
+	position: fixed;
+	background: #1c1b1b;
+	color: white;
+	left: 0px;
+	height: 166%;
+	top: 10%;
+	width: 25%;
+}
+
+.block_2 {
+	overflow: scroll;
+	height: 560px;
+}
+
+.text {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 10%;
+	text-align: left;
+}
+.check_block:hover {
+	color: white;
+	cursor: pointer
+}
+.text:hover {
+	color: white;
+	cursor: pointer
+}
+
+.mini_block_1, .mini_block_2 {
+	border: 2px solid #302f2f;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.mini_block_2 {
+	color: #d1d1d1;
+}
+
+.mini_block_2 {
+
+}
+
+.check_block {
+	padding-left: 10%;
+	padding-top: 10px;
+}
+
+.input {
+	height: 25px;
+	border: 2px solid #302f2f;
+	background: black;
+	color: #302f2f;
+	border-radius: 15px;
+	padding-left: 10px;
+	color: white;
+}
+
+button {
+	height: 31px;
+	border: 2px solid #302f2f;
+	background: black;
+	color: #302f2f;
+	border-radius: 15px;
+}
+
+button:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.block_3 {
+	position: absolute;
+	background: #1c1b1b;
+	color: white;
+	left: 25%;
+	width: 75%;
+	top: 10%;
+	height: 166%;
+}
+
+.text_block_3 {
+	padding-left: 10px;
+}
+
+.input_2 {
+	margin-left: 5px;
+	margin-top: 20px;
+	height: 25px;
+	border: 2px solid #302f2f;
+	background: black;
+	color: #302f2f;
+	border-radius: 15px;
+	padding-left: 10px;
+	color: white;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="logo">
+            <span>Логотип</span>
+        </div>
+        
+        <div class="button_1">
+            <span>Купить</span>
+        </div>
+        
+        <div class="button_2">
+            <span>Продать</span>
+        </div>
+
+        <div class="button_3">
+            <span>FAQ</span>
+        </div>
+
+        <div class="button_4">
+            <span>USD<span>
+        </div>
+
+        <div class="button_5">
+            <span>РУ</span>
+        </div>
+        
+    </div>
+    <div class="block_2">
+        <div class="mini_block_1">
+            <p class="text">Фильтры:</p>
+        </div>
+        <div class="mini_block_2">
+            <p class="text">Качество:</p>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Прямо с завода</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Немного поношеное</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>После полевых испытаний</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Поношеное</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Закалённое в боях</td>
+            </div>
+            <p class="text">Раритетность:</p>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Ширпотреб</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Промышленое качество</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Армейское качество</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Запрещённое</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Засекреченное</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Тайное</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Контробандное</td>
+            </div>
+            <p class="text">Категория:</p>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Обычное</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>StatTrack</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Сувенир</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>&#9733;</td>
+            </div>
+            <div class="check_block">
+                <td><input type="checkbox"></td>
+                <td>Стикеры на скине</td>
+            </div>
+            <div class="text" class="check_block">
+                <form action="/search" method="GET">
+                    <input class="input" type="text" name="q" placeholder="Поиск по стикерам">
+                    <button class="button_
+                    search" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_3">
+        <div class="mini_block_1">
+            <span class="text_block_3">Пистолеты</span>
+            <span class="text_block_3">Винтовки</span>
+            <span class="text_block_3">Снайперские винтовки</span>
+            <span class="text_block_3">Пистолето-пулемёты</span>
+            <span class="text_block_3">Пулемёты</span>
+            <span class="text_block_3">Дробовики</span>
+            <span class="text_block_3">Ножи</span>
+            <span class="text_block_3">Перчатки</span>
+            <span class="text_block_3">Контейнеры</span>
+            <span class="text_block_3">Наклейки</span>
+            <span class="text_block_3">Другое</span>
+            <form action="/search" method="GET">
+                <input class="input_2" class="input" type="text" name="q" placeholder="Быстрый поиск">
+                <button class="button_
+                search" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
